@@ -16,7 +16,7 @@ pub fn div(op1: U256, op2: U256) -> U256 {
 pub fn sdiv(op1: U256, op2: U256) -> U256 {
 	let op1: I256 = op1.into();
 	let op2: I256 = op2.into();
-	println!("SDIV: {}:{}",op1,op2);
+	println!("SDIV: {:#?}:{:#?}",op1,op2);
 	let ret = op1 / op2;
 	ret.into()
 }
